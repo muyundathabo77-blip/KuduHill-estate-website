@@ -11,7 +11,7 @@ function Home() {
       <div className="hero-content">
         <h1>Find your dream plot</h1>
 
-        <h3>At Kudu Hill Estate</h3>
+        <h2>At Kudu Hill Estate</h2>
 
         <p>
           Discover your perfect plot of land at Kudu Hill Estate,

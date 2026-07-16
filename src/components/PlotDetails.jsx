@@ -1,8 +1,8 @@
 function PlotDetails(){
     return(
-        <section id="plots" className="plotdetails-popup">
+        <div>
             <p>1 Acre plots</p>
-        </section>
+        </div>
     );
 }
 

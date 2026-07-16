@@ -1,8 +1,15 @@
+.plotdetails-link{
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:white;
+    font-size:16px;
+}
 .plotdetails-popup{
     position: fixed;
     right:20px;
     bottom:20px;
-    background:none;
+    background:#719430;
     padding:20px;
     border-radius:10px;
 }
