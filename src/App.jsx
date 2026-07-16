@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Navbar />
-
+      <Home />
+      <contact/>
+      <plotDetails/>
     </>
   );
 }

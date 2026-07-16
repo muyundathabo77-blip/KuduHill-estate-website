@@ -1,0 +1,8 @@
+.plotdetails-popup{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    background:none;
+    padding:20px;
+    border-radius:10px;
+}
