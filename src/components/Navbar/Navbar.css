@@ -43,28 +43,25 @@
 }
 
 .nav-links a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   transition: color 0.3s;
 }
-
-.nav-links a:hover {
-  color: #719430;
-}
-.contact-link {
-  background:none;
+.nav-links button {
+  background: none;
   border: none;
-  color: black;
+  color: white;
   cursor: pointer;
   font-size: 16px;
 }
-.plotdetails-link{
-    background:none;
-    border:none;
-    cursor:pointer;
-    color:white;
-    font-size:16px;
+.page-details {
+  margin-top: 30px;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #719430;
 }
 
