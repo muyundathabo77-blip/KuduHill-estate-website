@@ -1,4 +1,4 @@
-import "../Features/footer.css";
+import "../Navbar/footer.css";
 
 function Footer(){
     return(

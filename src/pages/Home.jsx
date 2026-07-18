@@ -1,6 +1,6 @@
 import "./Home.css";
 import kuduhills2 from "../assets/images/kuduhills2.jpeg";
-import PlotDetails from"../components/plotDetails";
+import PlotDetails from "../components/PlotDetails";
 
 function Home() {
   return (

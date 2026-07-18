@@ -1,9 +1,11 @@
-import "./Statistics.css";
-import roadIcon from "../../assets/icons/road.png";
-import homeIcon from "../../assets/icons/home.png";
-import waterIcon from "../../assets/icons/water.png";
-import natureIcon from "../../assets/icons/nature.png";
-import shieldIcon from "../../assets/icons/shield.png";
+import "../Navbar/Statistics.css";
+import kafue from "../../assets/icons/kafue.png";
+import cosmo from "../../assets/icons/cosmo.png";
+import clif from "../../assets/icons/clif.png";
+import canyon from "../../assets/icons/canyon.png";
+import lusaka from "../../assets/icons/lusaka.png";
+import treecover from "../../assets/icons/treecover.png";
+import size from "../../assets/icons/size.png";
 
 type Fact = {
   id: number;
@@ -16,38 +18,52 @@ type Fact = {
 const facts: Fact[] = [
   {
     id: 1,
-    icon: roadIcon,
+    icon: kafue,
     title: "From Kafue Road",
     value: "3.3",
     unit: "km",
   },
   {
     id: 2,
-    icon: homeIcon,
+    icon: cosmo,
     title: "From Cosmopolitan Mall",
     value: "25",
     unit: "min",
   },
   {
     id: 3,
-    icon: waterIcon,
+    icon: clif,
     title: "Kafue River Cliff",
     value: "15",
     unit: "min",
   },
   {
     id: 4,
-    icon: natureIcon,
+    icon: canyon,
     title: "From Tiffany's Canyon",
     value: "5",
     unit: "min",
   },
   {
     id: 5,
-    icon: shieldIcon,
+    icon: lusaka,
     title: "From Lusaka CBD",
     value: "30",
     unit: "min",
+  },
+  {
+    id: 6,
+    icon: size,
+    title: "Property Size",
+    value: "1",
+    unit: "acre",
+  },
+  {
+    id: 7,
+    icon: treecover,
+    title: "Tree Cover",
+    value: "80",
+    unit: "%",
   },
 ];
 
