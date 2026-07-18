@@ -6,6 +6,7 @@ import water from "../../assets/icons/water.png";
 import sola from "../../assets/icons/sola.png";
 import waste from "../../assets/icons/waste.png";
 import home from "../../assets/icons/home.png";
+import tree from "../../assets/icons/tree.png";
 
 
 type Feature = {
@@ -38,7 +39,7 @@ function Features() {
     },
     {
       id: 4,
-      icon: "",
+      icon: tree,
       title: "Green Space",
       description: "Preserving natural tree cover and harmonizing modern living with nature.",
       width: 60,
@@ -84,7 +85,7 @@ function Features() {
     <section className="features-section">
       <div className="features-header">
         <h2>
-          Why Choose <span>Kudu Hills</span>
+          Why Choose<span>Kudu Hills</span>
         </h2>
 
         <p>

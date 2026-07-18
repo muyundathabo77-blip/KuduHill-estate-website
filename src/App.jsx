@@ -1,7 +1,8 @@
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
-import Features from "./components/Features/features"
-import Footer from "./components/Footer/footer"
+import Footer from "./components/Footer/footer";
+import Statistics from "./components/facts/statistics";
+
 import "./App.css";
 
 function App() {
@@ -9,12 +10,10 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <contact/>
-      <plotDetails/>
-      <Features/>
-      <Footer/>
+      <Features />
+      <Statistics />
+      <Footer />
     </>
-      
   );
 }
 

@@ -1,4 +1,4 @@
-import "./footer.css"
+import "../Features/footer.css";
 
 function Footer(){
     return(
@@ -49,7 +49,7 @@ function Footer(){
 
 
   <div className="footer-bottom">
-    <p>© 2026 Mudi Properties | All Rights Reserved</p>
+    <p>© 2026 property@mudi.co.zm | All Rights Reserved</p>
   </div>
 
 </footer>
