@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/footer";
 import Statistics from "./components/facts/statistics";
+import Features from "./components/Features/features";
 
 import "./App.css";
 

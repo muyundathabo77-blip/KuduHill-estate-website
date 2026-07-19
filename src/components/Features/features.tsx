@@ -1,4 +1,4 @@
-import "./features.css";
+import "../Navbar/features.css";
 
 import road from "../../assets/icons/road.png";
 import shield from "../../assets/icons/shield.png";

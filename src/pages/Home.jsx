@@ -1,6 +1,5 @@
 import "./Home.css";
 import kuduhills2 from "../assets/images/kuduhills2.jpeg";
-import PlotDetails from"../components/plotDetails";
 
 function Home() {
   return (
@@ -10,8 +9,7 @@ function Home() {
     >
       <div className="hero-content">
         <h1>Find your dream plot</h1>
-
-        <h2>At Kudu Hill Estate</h2>
+         <h2>At Kudu Hill Estate</h2>
 
         <p>
           Discover your perfect plot of land at Kudu Hill Estate,
@@ -20,6 +18,7 @@ function Home() {
         </p>
 
         <button>View Available Plots</button>
+    
       </div>
     </section>
   );

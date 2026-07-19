@@ -1,4 +1,4 @@
-import "./Statistics.css";
+import "../Navbar/Statistics.css";
 import roadIcon from "../../assets/icons/road.png";
 import homeIcon from "../../assets/icons/home.png";
 import waterIcon from "../../assets/icons/water.png";
