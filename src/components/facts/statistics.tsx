@@ -6,6 +6,8 @@ import canyon from "../../assets/icons/canyon.png";
 import lusaka from "../../assets/icons/lusaka.png";
 import treecover from "../../assets/icons/treecover.png";
 import size from "../../assets/icons/size.png";
+import perfect from "../../assets/icons/perfect.png";
+import available from "../../assets/icons/available.png";
 
 type Fact = {
   id: number;
@@ -65,6 +67,21 @@ const facts: Fact[] = [
     value: "80",
     unit: "%",
   },
+  {
+    id: 8,
+    icon: perfect,
+    title: "Perfect Scenery",
+    value: "100",
+    unit: "%",
+  },
+
+  {
+    id: 9,
+    icon: available,
+    title: "Plots Available",
+    value: "200",
+    unit: "+",
+  },
 ];
 
 
@@ -85,7 +102,6 @@ function Statistics() {
 
         {facts.map((fact) => (
           <div className="statistics-card" key={fact.id}>
-
             <img 
               src={fact.icon} 
               alt={fact.title}
@@ -93,7 +109,6 @@ function Statistics() {
             />
 
             <div className="statistics">
-
               <span className="number">
                 {fact.value}
               </span>
@@ -101,9 +116,9 @@ function Statistics() {
               <span className="unit">
                 {fact.unit}
               </span>
-
             </div>
 
+            <p className="statistics-title">{fact.title}</p>
           </div>
         ))}
 

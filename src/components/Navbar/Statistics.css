@@ -1,12 +1,13 @@
-
 .statistics-section {
     padding: 80px 60px;
-    background:linear-gradient(
+    background: linear-gradient(
         to bottom,
-        #f8fbf4
-         #eef6e7,
+        #f8fbf4,
+        #eef6e7,
         #ffffff
-    )
+    );
+
+    animation: fadeInSection 1.2s ease;
 }
 
 .header {
@@ -15,7 +16,7 @@
 }
 
 .header p {
-    color:black;
+    color: black;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -26,9 +27,11 @@
     font-size: 38px;
     max-width: 700px;
     margin: 15px auto;
-    color:#719430;
+    color: #719430;
     line-height: 1.3;
 }
+
+/* ================= GRID ================= */
 
 .statistics-container {
     display: grid;
@@ -36,46 +39,81 @@
     gap: 25px;
 }
 
-.statistics-card {
+/* ================= CARD ================= */
 
-    background: white;
-    padding: 35px 20px;
+.statistics-card {
+    background:white;
+    padding: 10px 20px;
     border-radius: 20px;
     text-align: center;
+
+    position: relative;
+    overflow: hidden;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 
     transition: all 0.4s ease;
 
-    position: relative;
-    overflow: hidden;
+    opacity: 0;
+    animation: cardFade 0.8s ease forwards;
 }
 
-.statistics-card::before {
+/* Green animated top line */
 
+.statistics-card::before {
     content: "";
     position: absolute;
-
-    width: 100%;
-    height: 5px;
-
-    background: #719430;
 
     top: 0;
     left: 0;
 
+    width: 0%;
+    height: 5px;
+
+    background: #719430;
+
+    transition: width 0.5s ease;
+}
+
+/* Shine effect */
+
+.statistics-card::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.7),
+        transparent
+    );
 }
 
 .statistics-card:hover {
+    transform: translateY(-15px) scale(1.03);
 
-    transform: translateY(-12px);
-
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-
+    box-shadow: 0 25px 45px rgba(0,0,0,.18);
 }
 
-.statistics-icon {
+.statistics-card:hover::before {
+    width: 100%;
+}
 
+.statistics-card:hover::after {
+    left: 130%;
+    transition: 0.8s;
+}
+
+/* ================= ICON ================= */
+
+.statistics-icon {
     width: 70px;
     height: 70px;
 
@@ -83,10 +121,12 @@
 
     margin-bottom: 20px;
 
+    animation: floatIcon 3s ease-in-out infinite;
 }
 
-.number {
+/* ================= NUMBER ================= */
 
+.number {
     display: block;
 
     font-size: 42px;
@@ -94,50 +134,113 @@
 
     color: #719430;
 
+    animation: numberPop 1s ease;
 }
 
 .unit {
-
     font-size: 18px;
-
     color: #6b7280;
-
     font-weight: 600;
-
 }
 
-@media(max-width:1200px){
-
-    .statistics-container{
-        grid-template-columns: repeat(3,1fr);
-    }
-
+.statistics-title {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #719430;
+    line-height: 1.4;
 }
 
+@keyframes fadeInSection {
 
-@media(max-width:768px){
-
-    .statistics-section{
-        padding:50px 20px;
+    from {
+        opacity: 0;
     }
 
-
-    .statistics-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-
-    .header h2{
-        font-size:28px;
+    to {
+        opacity: 1;
     }
 
 }
 
+@keyframes cardFade {
 
-@media(max-width:480px){
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
 
-    .statistics-container{
-        grid-template-columns:1fr;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes floatIcon {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes numberPop {
+
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+
+    .statistics-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .statistics-section {
+        padding: 50px 20px;
+    }
+
+    .statistics-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .statistics-container {
+        grid-template-columns: 1fr;
     }
 
 }
