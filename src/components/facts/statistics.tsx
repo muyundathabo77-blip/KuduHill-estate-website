@@ -1,11 +1,9 @@
 import "../Navbar/Statistics.css";
-<<<<<<< HEAD
 import roadIcon from "../../assets/icons/road.png";
 import homeIcon from "../../assets/icons/home.png";
 import waterIcon from "../../assets/icons/water.png";
 import natureIcon from "../../assets/icons/nature.png";
 import shieldIcon from "../../assets/icons/shield.png";
-=======
 import kafue from "../../assets/icons/kafue.png";
 import cosmo from "../../assets/icons/cosmo.png";
 import clif from "../../assets/icons/clif.png";
@@ -15,7 +13,6 @@ import treecover from "../../assets/icons/treecover.png";
 import size from "../../assets/icons/size.png";
 import perfect from "../../assets/icons/perfect.png";
 import available from "../../assets/icons/available.png";
->>>>>>> fa8a1a28f5748f3eb19da4f3c65ebc51c5d6ea44
 
 type Fact = {
   id: number;
