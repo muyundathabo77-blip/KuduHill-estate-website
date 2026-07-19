@@ -1,9 +1,21 @@
 import "../Navbar/Statistics.css";
+<<<<<<< HEAD
 import roadIcon from "../../assets/icons/road.png";
 import homeIcon from "../../assets/icons/home.png";
 import waterIcon from "../../assets/icons/water.png";
 import natureIcon from "../../assets/icons/nature.png";
 import shieldIcon from "../../assets/icons/shield.png";
+=======
+import kafue from "../../assets/icons/kafue.png";
+import cosmo from "../../assets/icons/cosmo.png";
+import clif from "../../assets/icons/clif.png";
+import canyon from "../../assets/icons/canyon.png";
+import lusaka from "../../assets/icons/lusaka.png";
+import treecover from "../../assets/icons/treecover.png";
+import size from "../../assets/icons/size.png";
+import perfect from "../../assets/icons/perfect.png";
+import available from "../../assets/icons/available.png";
+>>>>>>> fa8a1a28f5748f3eb19da4f3c65ebc51c5d6ea44
 
 type Fact = {
   id: number;
@@ -16,38 +28,67 @@ type Fact = {
 const facts: Fact[] = [
   {
     id: 1,
-    icon: roadIcon,
+    icon: kafue,
     title: "From Kafue Road",
     value: "3.3",
     unit: "km",
   },
   {
     id: 2,
-    icon: homeIcon,
+    icon: cosmo,
     title: "From Cosmopolitan Mall",
     value: "25",
     unit: "min",
   },
   {
     id: 3,
-    icon: waterIcon,
+    icon: clif,
     title: "Kafue River Cliff",
     value: "15",
     unit: "min",
   },
   {
     id: 4,
-    icon: natureIcon,
+    icon: canyon,
     title: "From Tiffany's Canyon",
     value: "5",
     unit: "min",
   },
   {
     id: 5,
-    icon: shieldIcon,
+    icon: lusaka,
     title: "From Lusaka CBD",
     value: "30",
     unit: "min",
+  },
+  {
+    id: 6,
+    icon: size,
+    title: "Property Size",
+    value: "1",
+    unit: "acre",
+  },
+  {
+    id: 7,
+    icon: treecover,
+    title: "Tree Cover",
+    value: "80",
+    unit: "%",
+  },
+  {
+    id: 8,
+    icon: perfect,
+    title: "Perfect Scenery",
+    value: "100",
+    unit: "%",
+  },
+
+  {
+    id: 9,
+    icon: available,
+    title: "Plots Available",
+    value: "200",
+    unit: "+",
   },
 ];
 
@@ -69,7 +110,6 @@ function Statistics() {
 
         {facts.map((fact) => (
           <div className="statistics-card" key={fact.id}>
-
             <img 
               src={fact.icon} 
               alt={fact.title}
@@ -77,7 +117,6 @@ function Statistics() {
             />
 
             <div className="statistics">
-
               <span className="number">
                 {fact.value}
               </span>
@@ -85,9 +124,9 @@ function Statistics() {
               <span className="unit">
                 {fact.unit}
               </span>
-
             </div>
 
+            <p className="statistics-title">{fact.title}</p>
           </div>
         ))}
 

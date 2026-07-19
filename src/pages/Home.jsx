@@ -1,5 +1,9 @@
 import "./Home.css";
 import kuduhills2 from "../assets/images/kuduhills2.jpeg";
+<<<<<<< HEAD
+=======
+import PlotDetails from "../components/PlotDetails";
+>>>>>>> fa8a1a28f5748f3eb19da4f3c65ebc51c5d6ea44
 
 function Home() {
   return (
