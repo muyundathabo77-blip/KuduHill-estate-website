@@ -1,67 +1,14 @@
-/* ===============================
-   STATISTICS SECTION
-================================= */
-
 .statistics-section {
-    position: relative;
-    overflow: hidden;
-
     padding: 80px 60px;
-
-    background:
-        linear-gradient(
-            rgba(16, 44, 20, 0.82),
-            rgba(16, 44, 20, 0.82)
-        ),
-        url("../../assets/images/features-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(
+        to bottom,
+        #f8fbf4,
+        #eef6e7,
+        #ffffff
+    );
 
     animation: fadeInSection 1.2s ease;
 }
-
-/* Decorative Background */
-
-.statistics-section::before,
-.statistics-section::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.statistics-section::before {
-    width: 380px;
-    height: 380px;
-    top: -180px;
-    left: -120px;
-    background: rgba(255, 255, 255, 0.05);
-    filter: blur(20px);
-}
-
-.statistics-section::after {
-    width: 300px;
-    height: 300px;
-    bottom: -150px;
-    right: -120px;
-    background: rgba(113, 148, 48, 0.12);
-    filter: blur(20px);
-}
-
-/* Keep content above background */
-
-.statistics-section > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* ===============================
-   HEADER
-================================= */
 
 .header {
     text-align: center;
@@ -69,7 +16,7 @@
 }
 
 .header p {
-    color: #d1d5db;
+    color: black;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -80,13 +27,11 @@
     font-size: 38px;
     max-width: 700px;
     margin: 15px auto;
-    color: #ffffff;
+    color: #719430;
     line-height: 1.3;
 }
 
-/* ===============================
-   GRID
-================================= */
+/* ================= GRID ================= */
 
 .statistics-container {
     display: grid;
@@ -94,22 +39,18 @@
     gap: 25px;
 }
 
-/* ===============================
-   CARD
-================================= */
+/* ================= CARD ================= */
 
 .statistics-card {
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(12px);
-
-    padding: 20px;
+    background:white;
+    padding: 10px 20px;
     border-radius: 20px;
     text-align: center;
 
     position: relative;
     overflow: hidden;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 
     transition: all 0.4s ease;
 
@@ -150,14 +91,15 @@
     background: linear-gradient(
         120deg,
         transparent,
-        rgba(255,255,255,.8),
+        rgba(255,255,255,.7),
         transparent
     );
 }
 
 .statistics-card:hover {
     transform: translateY(-15px) scale(1.03);
-    box-shadow: 0 25px 45px rgba(0,0,0,.3);
+
+    box-shadow: 0 25px 45px rgba(0,0,0,.18);
 }
 
 .statistics-card:hover::before {
@@ -169,9 +111,7 @@
     transition: 0.8s;
 }
 
-/* ===============================
-   ICON
-================================= */
+/* ================= ICON ================= */
 
 .statistics-icon {
     width: 70px;
@@ -184,9 +124,7 @@
     animation: floatIcon 3s ease-in-out infinite;
 }
 
-/* ===============================
-   NUMBER
-================================= */
+/* ================= NUMBER ================= */
 
 .number {
     display: block;
@@ -209,13 +147,9 @@
     margin-top: 12px;
     font-size: 15px;
     font-weight: 600;
-    color: #2d3e16;
+    color: #719430;
     line-height: 1.4;
 }
-
-/* ===============================
-   ANIMATIONS
-================================= */
 
 @keyframes fadeInSection {
 
@@ -277,9 +211,7 @@
 
 }
 
-/* ===============================
-   RESPONSIVE
-================================= */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1200px) {
 
@@ -293,7 +225,6 @@
 
     .statistics-section {
         padding: 50px 20px;
-        background-attachment: scroll;
     }
 
     .statistics-container {
@@ -310,10 +241,6 @@
 
     .statistics-container {
         grid-template-columns: 1fr;
-    }
-
-    .header h2 {
-        font-size: 24px;
     }
 
 }
