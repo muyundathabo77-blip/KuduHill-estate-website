@@ -1,201 +1,221 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
+.navbar{
 
-  width: 100%;
-  height: 80px;
+position:absolute;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+top:0;
+left:0;
 
-  padding: 0 40px;
+width:100%;
 
-  z-index: 1000;
+height:80px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 40px;
+
+z-index:1000;
+
 }
 
+.logo img{
 
-/* Logo */
-.logo img {
-  width: 100px;
-  height: 90px;
-  object-fit: contain;
+width:100px;
+
+height:90px;
+
+object-fit:contain;
+
 }
 
+.nav-links{
 
-/* Navigation container */
-.nav-content {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
+display:flex;
+
+gap:45px;
+
 }
+.nav-links a{
 
+color:white;
 
-/* Links */
-.nav-links {
-  display: flex;
-  gap: 50px;
+text-decoration:none;
 
-  position: relative;
-  z-index: 1000;
-}
+font-size:18px;
 
+font-weight:bold;
 
-/* Navigation text */
-.nav-links a {
+cursor:pointer;
 
-  color: white;
-
-  text-decoration: none;
-
-  cursor: pointer;
-
-  font-size: 18px;
-
-  font-weight: bold;
-
-  transition: color 0.3s ease;
-}
-
-
-/* Hover effect */
-.nav-links a:hover {
-
-  color: #719430;
+transition:0.3s;
 
 }
 
 
-/* Page details */
-.page-details {
+.nav-links a:hover{
 
-  margin-top: 30px;
+color:#719430;
 
-  color: white;
+}
+
+.menu-icon{
+
+display:none;
+
+font-size:32px;
+
+color:#ffff;
+
+cursor:pointer;
+
+}
+
+@media(max-width:768px){
+
+
+.navbar{
+
+padding:0 20px;
+
+}
+
+.logo img{
+
+width:80px;
+
+height:70px;
+
+}
+
+.menu-icon{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:80px;
+
+right:0;
+
+width:100%;
+
+background:rgba(0,0,0,0.9);
+
+display:none;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:20px 0;
+
+gap:25px;
+
+}
+
+.nav-links.active{
+
+display:flex;
 
 }
 
 
+.nav-links a{
 
-/* ===========================
-      MODAL POPUP STYLES
-   =========================== */
-
-
-.modal-overlay {
-
-  position: fixed;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0,0,0,0.6);
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  z-index: 2000;
-
-}
-
-
-
-.modal-content {
-
-  position: relative;
-
-  width: 400px;
-
-  background: lightgrey;
-
-  padding: 30px;
-
-  border-radius: 12px;
-
-  text-align: center;
-
-  animation: popup 0.3s ease;
-
-}
-
-
-
-.modal-content h2 {
-
-  color: #719430;
-
-  margin-bottom: 15px;
-
-}
-
-
-
-.modal-content p {
-
-  color: black;
-
-  line-height: 1.6;
-
-  font-size: 16px;
+font-size:20px;
 
 }
 
 
 
-.close {
+}
 
-  position: absolute;
+.modal-overlay{
 
-  top: 10px;
+position:fixed;
 
-  right: 15px;
+top:0;
+left:0;
 
-  font-size: 28px;
+width:100%;
+height:100%;
 
-  cursor: pointer;
+background:rgba(0,0,0,0.6);
 
-  color: black;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:2000;
 
 }
 
 
 
-.close:hover {
+.modal-content{
 
-  color: #719430;
+width:400px;
+
+max-width:90%;
+
+background:lightgrey;
+
+padding:30px;
+
+border-radius:12px;
+
+text-align:center;
 
 }
 
-@keyframes popup {
 
-  from {
 
-    transform: scale(0.8);
+.modal-content h2{
 
-    opacity: 0;
+color:#719430;
 
-  }
+margin-bottom:15px;
 
-  to {
+}
 
-    transform: scale(1);
 
-    opacity: 1;
 
-  }
+.modal-content p{
+
+color:black;
+
+line-height:1.6;
+
+}
+
+
+
+.close{
+
+position:absolute;
+
+top:10px;
+
+right:15px;
+
+font-size:28px;
+
+cursor:pointer;
 
 }

@@ -5,6 +5,7 @@ import { useState } from "react";
 function Navbar() {
 
   const [activeModal, setActiveModal] = useState(null);
+  const[menuOpen, setMenuOpen]=useState(false);
 
   const navDetails = {
     Home:
@@ -33,7 +34,10 @@ function Navbar() {
         <div className="logo">
           <img src={image} alt="KuduHill Estate Logo" />
         </div>
-        <div className="nav-links">
+        <div 
+        className="menu-icon"
+        onClick={()=> setMenuOpen(!menuOpen)}>☰</div>
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
 
           {Object.keys(navDetails).map((item)=>(
             <a
