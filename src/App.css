@@ -1,62 +1,34 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+
 html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+body {
+    width:100%;
+    min-height:100%;
 }
+
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background:#111827;
 }
 
-/* .hero {
-  width: 100%;
-  height: 100vh;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#root {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* 
-.hero-overlay {
-  text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 30px;
-  border-radius: 10px;
+    min-height:100vh;
+
+    background:linear-gradient(
+        180deg,
+         #f8fbf5 0%,
+        #eef6e8 45%,
+        #ffffff 100%
+    );
+
+    padding:40px;
+
 }
-
-.hero-overlay h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-.hero-overlay p {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.hero-overlay button {
-  padding: 12px 25px;
-  font-size: 18px;
-  background: #1b5e20;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero-overlay button:hover {
-  background: #145a32;
-} */

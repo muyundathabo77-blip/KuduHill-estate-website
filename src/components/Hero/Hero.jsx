@@ -3,7 +3,7 @@ import "./Hero.css";
 
 import image1 from "../../assets/images/kuduhills2.jpeg";
 import image2 from "../../assets/images/kudu.png";
-import image3 from "../../assets/images/MAR.png";
+import image3 from "../../assets/images/MARC.png";
 
 
 const slides = [
@@ -43,7 +43,7 @@ function Hero() {
                 return (prev + 1) % slides.length;
             });
 
-        }, 3000);
+        }, 120000);
 
 
         return () => {
