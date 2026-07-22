@@ -14,7 +14,7 @@ body{
 ================================= */
 
 .features-section{
-    padding:80px 40px;
+    padding:10px 20px;
 
     background:linear-gradient(
         to bottom,
@@ -103,7 +103,7 @@ body{
 
 .feature-card{
     background:white;
-    padding:35px 25px;
+    padding:10px 20px;
     border-radius:18px;
 
     text-align:center;
