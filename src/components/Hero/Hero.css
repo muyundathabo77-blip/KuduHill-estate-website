@@ -70,6 +70,7 @@
     font-size: 18px;
     animation: typing 2s ease-in-out;
     margin-bottom:100px;
+    margin-left:-70px;
 }
 @keyframes typing {
     from {
@@ -98,7 +99,8 @@
     background: #719430;
     padding: 12px 30px;
     border-radius: 30px;
-    margin-top:40px;
+    margin-top:20px;
+    margin-left:-70px;
 }
 
 .visit-btn:hover {

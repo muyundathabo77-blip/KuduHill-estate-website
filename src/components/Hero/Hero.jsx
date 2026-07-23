@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Hero.css";
-import image from "../../assets/images/kuduweb.png";
+import image from "../../assets/images/kuduweb3.png";
 
 const slides = [
   {
@@ -11,7 +11,7 @@ const slides = [
   {
     title: "Affordable Land",
     description:
-      "Secure your plot today with flexible payment options.",
+      "Secure your plot today with flexible payment.",
   },
   {
     title: "A Home You Deserve",
@@ -61,9 +61,6 @@ backgroundImage: `url(${image})`,
  Schedule A Visit With Us
 </a>
 
-</div>
-<div className="estatee-name">
-    <h2>KUDUHILLS ESTATE</h2>
 </div>
 
 </section>
