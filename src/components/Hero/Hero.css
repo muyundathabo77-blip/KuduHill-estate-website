@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     z-index:1;
+    padding-left:0px;
 }
 
 
@@ -25,7 +26,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    
+    
 }
 
 
@@ -39,6 +41,7 @@
     color: white;
     max-width: 600px;
     font-size: 20px;
+    padding-left:0px;
 }
 
 
@@ -48,27 +51,11 @@
 
 
 .hero-content p {
-    color: white;
+    color: black;
     font-size: 18px;
 }
 
 
-.hero-content button {
-    margin-top: 30px;
-    padding: 14px 35px;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: .3s;
-}
-
-
-.hero-content button:hover {
-    background: #5d7a26;
-}
 
 
 /* Mobile */
@@ -89,4 +76,16 @@
     font-size: 2.5rem;
 }
 
+}
+.visit-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.visit-btn:hover {
+    background: #719430;
 }

@@ -10,21 +10,20 @@ function Navbar() {
 
   const navLinks = [
     "Home",
-    "Plot Details",
-    "Sales",
-    "About",
-    "FAQ",
+    "PlotDetails",
     "Contact"
   ];
 
 
   const navDetails = {
 
-    About:
-      "KuduHill Estate is a premium property development designed to provide comfortable, secure, and peaceful living spaces.",
+    Home:
+      "Residential Plots Where Your Home And Nature Flourish together.",
 
     Contact:
-      "Get in touch with our sales team for enquiries, site visits, plot availability, and any additional information on +260978832662, or Email us at property@mudi.co.zm"
+      "Get in touch with our sales team for enquiries, site visits, plot availability, and any additional information on +260978832662, or Email us at property@mudi.co.zm",
+    PlotDetails:
+      "1 Acre Plots Available"
 
   };
 

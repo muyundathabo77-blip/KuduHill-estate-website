@@ -30,7 +30,7 @@ justify-content:space-between;
 
 background:transparent;
 
-padding:20px 60px;
+padding:20px 30px;
 
 z-index:100;
 
@@ -41,7 +41,7 @@ z-index:100;
 .logo img{
 
 
-width:100px;
+width:90px;
 
 
 height:90px;
@@ -59,7 +59,9 @@ object-fit:contain;
 display:flex;
 
 
-gap:45px;
+gap:40px;
+
+margin-right:90px;
 
 
 }

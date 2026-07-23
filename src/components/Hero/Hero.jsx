@@ -27,9 +27,14 @@ backgroundImage: `url(${image})`,
 Discover your perfect plot of land at Kudu Hill.
 </p>
 
-<button>
-Schedule A Visit With Us
-</button>
+<a
+  href="https://wa.me/260762603394?text=Hello%20Kudu%20Hill%20Estate,%20I%20would%20like%20to%20schedule%20a%20visit."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="visit-btn"
+>
+  Schedule A Visit With Us
+</a>
 
 </div>
 
