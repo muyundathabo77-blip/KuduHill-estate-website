@@ -1,104 +1,44 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-
-.navbar{
-
-
-position:absolute;
-
-
-top:20px;
-left:0px;
-
-
-width:100%;
-border-radius:20px;
-height:100px;
-
-
-display:flex;
-
-
-align-items:center;
-
-justify-content:space-between;
-
-background:transparent;
-
-padding:20px 30px;
-
-z-index:100;
-
-
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    right: 24px;
+    width: auto;
+    border-radius: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 30px;
+    z-index: 100;
 }
 
-
-.logo img{
-
-
-width:90px;
-
-
-height:90px;
-
-
-object-fit:contain;
-
-
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
 }
 
-
-.nav-links{
-
-
-display:flex;
-
-
-gap:40px;
-
-margin-right:90px;
-
-
-}
-.nav-links a{
-
-
-color:white;
-
-
-text-decoration:none;
-
-
-font-size:18px;
-
-
-font-weight:bold;
-
-
-cursor:pointer;
-
-
-transition:0.3s;
-
-
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-right: 90px;
 }
 
-
-
-.nav-links a:hover{
-
-
-color:#719430;
-
-
-}
-.menu-icon{
-    display:none;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .estate-name {
     color: rgb(94, 66, 66);
@@ -109,33 +49,65 @@ color:#719430;
     white-space: nowrap;
 }
 
-@media(max-width:768px){
- .menu-icon {
-        display: block;
-        font-size: 28px;
-        color: black;
-        cursor: pointer;
-        z-index: 1001;
+.nav-links a:hover {
+    color: #719430;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: #719430;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
     }
 
-.navbar{
+    .logo img {
+        width: 80px;
+        height: 70px;
+    }
 
+    .menu-icon {
+        color: white;
+        display: block;
+    }
 
-padding:0 20px;
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 25px;
+    }
 
+    .nav-links.active {
+        display: flex;
+    }
 
+    .nav-links a {
+        font-size: 20px;
+    }
 }
 
-
-.logo img{
-
-
-width:80px;
-
-
-height:70px;
-
-
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
 }
 .estate-name {
     color: rgb(94, 66, 66);
@@ -144,154 +116,31 @@ height:70px;
     margin-top: 10px;
     letter-spacing: 1px;
     white-space: nowrap;
+
+.modal-content {
+    width: 400px;
+    max-width: 90%;
+    background: lightgrey;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
 }
 
-.nav-links{
-
-
-position:absolute;
-
-
-top:80px;
-
-
-right:0;
-
-
-width:100%;
-
-
-background:rgba(0,0,0,0.9);
-
-
-display:none;
-
-
-flex-direction:column;
-
-
-align-items:center;
-
-
-padding:20px 0;
-
-
-gap:25px;
-
-
+.modal-content h2 {
+    color: #719430;
+    margin-bottom: 15px;
 }
 
-
-.nav-links.active{
-
-
-display:flex;
-
-
+.modal-content p {
+    color: black;
+    line-height: 1.6;
+>>>>>>> 9eacf4d8df68a925f2deabd6ddb6b4218d205f82
 }
 
-
-
-.nav-links a{
-
-
-font-size:20px;
-
-
-}
-
-
-}
-
-
-.modal-overlay{
-
-
-position:fixed;
-
-
-top:0;
-left:0;
-
-
-width:100%;
-height:100%;
-
-
-background:rgba(0,0,0,0.6);
-
-
-display:flex;
-
-
-justify-content:center;
-
-
-align-items:center;
-
-
-z-index:2000;
-
-
-}
-.modal-content{
-
-
-width:400px;
-
-
-max-width:90%;
-
-
-background:lightgrey;
-
-
-padding:30px;
-
-
-border-radius:12px;
-
-
-text-align:center;
-
-
-}
-.modal-content h2{
-
-
-color:#719430;
-
-
-margin-bottom:15px;
-
-
-}
-.modal-content p{
-
-
-color:black;
-
-
-line-height:1.6;
-
-
-}
-.close{
-
-
-position:absolute;
-
-
-top:10px;
-
-
-right:15px;
-
-
-font-size:28px;
-
-
-cursor:pointer;
-
-
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
 }

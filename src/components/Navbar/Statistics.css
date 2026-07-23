@@ -2,7 +2,7 @@
 
 .statistics-section {
 
-    padding:60px 30px;
+    padding:80px 50px;
 
     background:linear-gradient(
         to bottom,
@@ -14,11 +14,15 @@
     animation:fadeInSection 1.2s ease;
 
 }
+
+
+/* ================= HEADER ================= */
+
 .header {
 
     text-align:center;
 
-    margin-bottom:40px;
+    margin-bottom:50px;
 
 }
 
@@ -54,6 +58,9 @@
 
 }
 
+
+/* ================= CONTAINER ================= */
+
 .statistics-container {
 
 
@@ -63,7 +70,7 @@
     grid-template-columns:repeat(4,150px);
 
 
-    gap:25px;
+    gap:40px;
 
 
     justify-content:center;
@@ -72,13 +79,17 @@
     align-items:center;
 
 
-    max-width:800px;
+    max-width:900px;
 
 
-    margin:0 auto;
+    margin:20px auto 0;
 
 
 }
+
+
+
+/* ================= CARD ================= */
 
 
 .statistics-card {
@@ -93,7 +104,7 @@
     min-height:145px;
 
 
-    padding:14px 8px;
+    padding:20px 10px;
 
 
     border-radius:16px;
@@ -109,6 +120,10 @@
 
 
     overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 
 
 
@@ -130,6 +145,8 @@
 
 
 }
+
+
 
 .statistics-card::before {
 
@@ -160,6 +177,7 @@
 
 
 }
+
 
 
 .statistics-card::after {
@@ -199,6 +217,8 @@
 
 }
 
+
+
 .statistics-card:hover {
 
 
@@ -225,7 +245,6 @@
 
 
 
-
 .statistics-card:hover::after {
 
 
@@ -239,25 +258,26 @@
 
 
 
+/* ================= ICON ================= */
+
+
 .statistics-icon {
 
 
-    width:28px;
-
-
-    height:28px;
-
-
+    width:32px;
+    height:32px;
     object-fit:contain;
-
-
-    margin-bottom:6px;
-
-
+    margin-bottom:10px;
+    display:block;
     animation:floatIcon 3s ease-in-out infinite;
 
 
 }
+
+
+
+/* ================= NUMBERS ================= */
+
 
 .number {
 
@@ -277,10 +297,13 @@
     line-height:1;
 
 
-    margin-top:4px;
+    margin-top:6px;
 
 
 }
+
+
+
 .unit {
 
 
@@ -295,10 +318,15 @@
 
 }
 
+
+
+/* ================= TITLE ================= */
+
+
 .statistics-title {
 
 
-    margin-top:8px;
+    margin-top:10px;
 
 
     font-size:12px;
@@ -326,6 +354,11 @@
 
 
 }
+
+
+
+/* ================= ANIMATIONS ================= */
+
 
 @keyframes fadeInSection {
 
@@ -376,6 +409,10 @@
     }
 
 }
+
+
+
+
 @keyframes numberPop {
 
 
@@ -415,6 +452,10 @@
 
 
 }
+
+
+
+
 @keyframes floatIcon {
 
 
@@ -435,9 +476,23 @@
 
 
     }
+
 }
 
+
+
+
+/* ================= TABLET ================= */
+
+
 @media(max-width:900px){
+
+
+    .statistics-section{
+
+        padding:70px 30px;
+
+    }
 
 
     .statistics-container{
@@ -446,7 +501,7 @@
         grid-template-columns:repeat(2,150px);
 
 
-        gap:20px;
+        gap:35px;
 
 
     }
@@ -458,13 +513,16 @@
 
 
 
+/* ================= MOBILE ================= */
+
+
 @media(max-width:500px){
 
 
     .statistics-section{
 
 
-        padding:50px 20px;
+        padding:60px 20px;
 
 
     }
@@ -475,6 +533,9 @@
 
 
         grid-template-columns:150px;
+
+
+        gap:30px;
 
 
     }

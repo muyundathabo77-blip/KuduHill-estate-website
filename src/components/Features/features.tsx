@@ -1,7 +1,6 @@
 import "../Navbar/features.css";
 
 import road from "../../assets/icons/road.png";
-import shield from "../../assets/icons/shield.png";
 import water from "../../assets/icons/water.png";
 import sola from "../../assets/icons/sola.png";
 import waste from "../../assets/icons/waste.png";
@@ -70,15 +69,6 @@ function Features() {
       width: 60,
       height: 60,
     },
-    {
-      id: 9,
-      icon: shield,
-      title: "Secure Area",
-      description: "Armed Security Services.",
-      width: 60,
-      height: 60,
-    },
-   
   ];
 
   return (

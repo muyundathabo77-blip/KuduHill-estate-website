@@ -10,8 +10,8 @@ function Footer(){
     <div className="footer-box">
       <h2>Mudi Properties</h2>
       <p>
-        Discover Kudu Hills Estate -Zambias first 1-acre eco-Friendly,Community where Nature Meets Morden living ,Devloped by Mudi Properties limited.
-        Secure your plot today and start bulding your modern Dream home in harmony with Nataure.
+        Discover Kudu Hills Estate, Zambia’s first 1-acre eco-friendly community by Mudi Properties.
+        Secure your plot and build your dream home in harmony with nature.
       </p>
     </div>
 
