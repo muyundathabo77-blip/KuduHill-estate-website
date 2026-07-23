@@ -1,8 +1,35 @@
+import { useState, useEffect } from "react";
 import "./Hero.css";
-
 import image from "../../assets/images/kuduweb.png";
 
+const slides = [
+  {
+    title: "Find Your Dream Plot",
+    description:
+      "Discover your perfect plot of land at Kudu Hill.",
+  },
+  {
+    title: "Affordable Land",
+    description:
+      "Secure your plot today with flexible payment options.",
+  },
+  {
+    title: "A Home You Deserve",
+    description:
+      "Grow a community with quality infrastructure.",
+  },
+];
+
 function Hero() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, 5000);
+
+  return () => clearInterval(interval);
+}, []);
 
 return (
 <section className="hero">
@@ -19,13 +46,11 @@ backgroundImage: `url(${image})`,
 <div className="hero-overlay"></div>
 
 
-<div className="hero-content">
+<div className="hero-content"key={currentSlide}>
 
-<h1>Find Your Dream Plot</h1>
+<h1>{slides[currentSlide].title}</h1>
 
-<p>
-Discover your perfect plot of land at Kudu Hill.
-</p>
+<p>{slides[currentSlide].description}</p>
 
 <a
   href="https://wa.me/260762603394?text=Hello%20Kudu%20Hill%20Estate,%20I%20would%20like%20to%20schedule%20a%20visit."
@@ -33,7 +58,7 @@ Discover your perfect plot of land at Kudu Hill.
   rel="noopener noreferrer"
   className="visit-btn"
 >
-  Schedule A Visit With Us
+ Schedule A Visit With Us
 </a>
 
 </div>
