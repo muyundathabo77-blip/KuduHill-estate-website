@@ -1,98 +1,42 @@
-import { useState, useEffect } from "react";
 import "./Hero.css";
 
-import image1 from "../../assets/images/kuduhills2.jpeg";
-import image2 from "../../assets/images/kudu.png";
-import image3 from "../../assets/images/MARC.png";
-
-
-const slides = [
-    {
-        image: image1,
-        title: "Find Your Dream Plot",
-        description: `Discover your perfect plot of land at Kudu Hill Estate,
-        where nature meets modern living. Explore our available
-        plots and find the ideal location for your dream home.`,
-        button: "View Available Plots"
-    },
-    {
-        image: image2,
-        title: "Affordable Land For Your Future",
-        description: "Secure your plot today with flexible payment options",
-        button: "Explore Plots"
-    },
-    {
-        image: image3,
-        title: "Home and Nature flourish together",
-        description: "A place to find a Home not a house",
-        button: "Learn More"
-    }
-];
-
+import image from "../../assets/images/kuduweb.png";
 
 function Hero() {
 
-    const [currentImage, setCurrentImage] = useState(0);
+return (
+<section className="hero">
+
+<div 
+className="hero-images"
+style={{
+backgroundImage: `url(${image})`,
+}}
+>
+</div>
 
 
-    useEffect(() => {
-
-        const timer = setInterval(() => {
-
-            setCurrentImage((prev) => {
-                return (prev + 1) % slides.length;
-            });
-
-        }, 120000);
+<div className="hero-overlay"></div>
 
 
-        return () => {
-            clearInterval(timer);
-        };
+<div className="hero-content">
 
-    }, []);
+<h1>Find Your Dream Plot</h1>
+
+<p>
+Discover your perfect plot of land at Kudu Hill.
+</p>
+
+<button>
+Schedule A Visit With Us
+</button>
+
+</div>
 
 
-    return (
-        <section className="hero">
+</section>
+);
 
-            <div
-                className="hero-slider"
-                style={{
-                    transform: `translateX(-${currentImage * 100}%)`
-                }}
-            >
-
-                {slides.map((slide, index) => (
-
-                    <div
-                        className="hero-slide"
-                        key={index}
-                        style={{
-                            backgroundImage: `url(${slide.image})`
-                        }}
-                    >
-
-                        <div className="hero-content">
-
-                            <h1>{slide.title}</h1>
-
-                            <p>{slide.description}</p>
-
-                            <button>
-                                {slide.button}
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                ))}
-
-            </div>
-
-        </section>
-    );
 }
 
 export default Hero;

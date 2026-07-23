@@ -14,7 +14,11 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    background:#111827;
+    background:#f8fbf4;
+    to bottom,
+        #f8fbf4,
+        #eef6e7,
+        #ffffff,
 }
 
 
@@ -23,8 +27,8 @@ body {
     min-height:100vh;
 
     background:linear-gradient(
-        180deg,
-         #f8fbf5 0%,
+        to bottom,
+         #f8fbf4 0%,
         #eef6e8 45%,
         #ffffff 100%
     );

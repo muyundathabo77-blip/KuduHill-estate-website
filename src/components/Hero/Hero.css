@@ -1,67 +1,92 @@
 .hero {
     width: 100%;
-    height: 85vh;
-    margin:5px auto;
-    overflow: hidden;
+    height: 100vh;
     position: relative;
-     
+    overflow: hidden;
+    z-index:1;
 }
 
-.hero-slider {
-    display: flex;
+
+/* Background image */
+.hero-images {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    transition: transform 1s ease-in-out;
-}
 
-.hero-slide {
-    position: relative;
-    min-width: 100%;
-    height: 120%;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    padding-left: 60px;
+    background-repeat: no-repeat;
 }
 
-.hero-content {
-    position:relative;
-    z-index:2;
-    color: white;
-    max-width: 600px;
-    margin-top: 80px;
-}
-.hero-content h1,
-.hero-content p {
-    color: white !important;
-    font-size:20px;
-}
-.hero-slide::before {
+
+/* Dark overlay */
+.hero-images::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45); /* Adjust darkness here */
+    inset: 0;
+    background: rgba(0,0,0,0.45);
 }
- .hero-content button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 25px;
 
-  background: white;
-  color: black;
 
-  font-size: 16px;
-  cursor: pointer;
-
-  width: 200px;
-  margin-top: 35px;
-  transition: 0.3s ease;
+/* Text */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 600px;
+    font-size: 20px;
 }
+
+
+.hero-content h1 {
+    font-size: 45px;
+}
+
+
+.hero-content p {
+    color: white;
+    font-size: 18px;
+}
+
+
+.hero-content button {
+    margin-top: 30px;
+    padding: 14px 35px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+
 .hero-content button:hover {
-  background: #5d7a26;
-  color: white;
+    background: #5d7a26;
+}
+
+
+/* Mobile */
+@media (max-width: 900px) {
+
+.hero {
+    height: 100vh;
+}
+
+
+.hero-content {
+    left: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
 }

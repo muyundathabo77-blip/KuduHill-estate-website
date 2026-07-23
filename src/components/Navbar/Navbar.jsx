@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import image from "../../assets/images/kuduhills.png";
+import image from "../../assets/images/kudulogo.png";
 import { useState } from "react";
 
 function Navbar() {
@@ -57,8 +57,7 @@ function Navbar() {
               onClick={(e)=>{
 
                 e.preventDefault();
-
-                // only open modal if details exist
+                
                 if(navDetails[item]){
                   setActiveModal(item);
                 }
