@@ -42,7 +42,7 @@
     height: 120px;
 }
 .estate-name {
-    color: rgb(94, 66, 66);
+    color: #719430;
     font-size: 50px;
     font-weight: bold;
     margin-top: 10px;
@@ -111,7 +111,7 @@
     z-index: 2000;
 }
 .estate-name {
-    color: rgb(94, 66, 66);
+    color: #719430;
     font-size: 50px;
     font-weight: bold;
     margin-top: 10px;

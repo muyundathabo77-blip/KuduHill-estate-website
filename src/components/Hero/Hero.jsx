@@ -6,12 +6,12 @@ const slides = [
   {
     title: "Find Your Dream Plot",
     description:
-      "Discover your perfect plot of land at Kudu Hill.",
+      "Discover your perfect land at Kudu Hill.",
   },
   {
     title: "Affordable Land",
     description:
-      "Secure your plot today with flexible payment.",
+      "Secure your plot with flexible payment.",
   },
   {
     title: "A Home You Deserve",
