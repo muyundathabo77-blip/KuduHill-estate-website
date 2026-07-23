@@ -100,6 +100,14 @@ color:#719430;
 .menu-icon{
     display:none;
 }
+.estate-name {
+    color: rgb(94, 66, 66);
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
 
 @media(max-width:768px){
  .menu-icon {
@@ -130,7 +138,7 @@ height:70px;
 
 }
 .estate-name {
-    color: black;
+    color: rgb(94, 66, 66);
     font-size: 50px;
     font-weight: bold;
     margin-top: 10px;
