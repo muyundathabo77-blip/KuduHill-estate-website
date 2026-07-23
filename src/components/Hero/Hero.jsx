@@ -58,7 +58,7 @@ backgroundImage: `url(${image})`,
   rel="noopener noreferrer"
   className="visit-btn"
 >
- Schedule A Visit With Us
+ Schedule A Visit
 </a>
 
 </div>

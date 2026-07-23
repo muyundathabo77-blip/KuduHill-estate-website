@@ -22,7 +22,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.38) 45%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero-content {
@@ -31,7 +30,7 @@
     left: 6%;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: black;
     max-width: 550px;
     font-size: 20px;
     padding: 0;
@@ -51,7 +50,7 @@
 }
 
 .hero-content p {
-    color: #f5f7fa;
+    color: black;
     font-size: 18px;
     animation: fadeText 1s ease-in-out;
     margin-bottom: 24px;
@@ -74,7 +73,7 @@
     display: inline-block;
     text-decoration: none;
     color: white;
-    background: linear-gradient(135deg, #719430 0%, #97b94f 100%);
+    background:  #719430;
     padding: 12px 30px;
     border-radius: 999px;
     margin-top: 20px;
@@ -84,8 +83,8 @@
 }
 
 .visit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 30px rgba(113, 148, 48, 0.35);
+    background-color:black;
+    transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {

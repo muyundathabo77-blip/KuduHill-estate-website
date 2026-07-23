@@ -39,6 +39,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    height: 120px;
 }
 .estate-name {
     color: rgb(94, 66, 66);
@@ -116,6 +117,7 @@
     margin-top: 10px;
     letter-spacing: 1px;
     white-space: nowrap;
+}
 
 .modal-content {
     width: 400px;
@@ -134,7 +136,6 @@
 .modal-content p {
     color: black;
     line-height: 1.6;
->>>>>>> 9eacf4d8df68a925f2deabd6ddb6b4218d205f82
 }
 
 .close {
