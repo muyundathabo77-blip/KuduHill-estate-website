@@ -4,31 +4,24 @@
     box-sizing:border-box;
 }
 
-
 html,
 body {
     width:100%;
     min-height:100%;
 }
 
-
 body {
-    font-family: Arial, sans-serif;
-    background:transparent;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    background:#f4f7ee;
+    color:#111827;
 }
 
-
 #root {
-
+    width:min(100%, 1440px);
+    margin:0 auto;
     min-height:100vh;
-
-    background:linear-gradient(
-        to bottom,
-         #f8fbf4 0%,
-        #eef6e8 45%,
-        #ffffff 100%
-    );
-
-    padding:40px;
-
+    overflow-x:hidden;
+    background:linear-gradient(180deg, #f8fbf4 0%, #eef6e8 45%, #ffffff 100%);
+    padding:0 24px 40px;
+    position:relative;
 }
