@@ -58,13 +58,7 @@ const facts: Fact[] = [
     value: "30",
     unit: "min",
   },
-  {
-    id: 6,
-    icon: size,
-    title: "Property Size",
-    value: "1",
-    unit: "acre",
-  },
+
   {
     id: 7,
     icon: treecover,
