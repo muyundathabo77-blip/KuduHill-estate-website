@@ -35,6 +35,8 @@ function Navbar() {
 
         <div className="logo">
           <img src={image} alt="KuduHill Logo" />
+          <h2 className="estate-name"> KUDUHILLS ESTATE</h2>
+
         </div>
 
 

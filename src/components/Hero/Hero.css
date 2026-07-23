@@ -25,9 +25,7 @@
 .hero-images::before {
     content: "";
     position: absolute;
-    inset: 0;
-    
-    
+    inset: 0; 
 }
 
 
@@ -35,30 +33,45 @@
 .hero-content {
     position: relative;
     z-index: 2;
-    left: 80px;
+    left: 6%;
     top: 50%;
     transform: translateY(-50%);
     color: white;
-    max-width: 600px;
+    max-width: 550px;
     font-size: 20px;
     padding-left:0px;
     margin-bottom:45px;
+}
+@media (max-width: 768px) {
+    .hero-content {
+        left: 5%;
+        right: 5%;
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
 
 
 .hero-content h1 {
     font-size: 20px;
-    animation: fadeText 1s ease-in-out;
+    animation: typing 1s ease-in-out;
     margin-bottom:20px;
 }
 
 .hero-content p {
     color: black;
     font-size: 18px;
-    animation: fadeText 1s ease-in-out;
+    animation: typing 2s ease-in-out;
     margin-bottom:100px;
 }
-@keyframes fadeText {
+@keyframes typing {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -77,18 +90,17 @@
     height: 100vh;
 }
 
-
 }
 .visit-btn {
     display: inline-block;
     text-decoration: none;
     color: white;
-    background: black;
+    background: #719430;
     padding: 12px 30px;
     border-radius: 30px;
     margin-top:40px;
 }
 
 .visit-btn:hover {
-    background: #719430;
+    background: black;
 }

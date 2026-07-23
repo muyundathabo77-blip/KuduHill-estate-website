@@ -62,7 +62,9 @@ backgroundImage: `url(${image})`,
 </a>
 
 </div>
-
+<div className="estatee-name">
+    <h2>KUDUHILLS ESTATE</h2>
+</div>
 
 </section>
 );
