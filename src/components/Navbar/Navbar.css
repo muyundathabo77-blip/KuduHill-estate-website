@@ -33,7 +33,7 @@
 }
 
 .nav-links a {
-    color: white;
+    color: #719430;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -41,17 +41,9 @@
     transition: 0.3s;
     height: 120px;
 }
-.estate-name {
-    color: #719430;
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 10px;
-    letter-spacing: 1px;
-    white-space: nowrap;
-}
 
 .nav-links a:hover {
-    color: #719430;
+    color: black;
 }
 
 .menu-icon {

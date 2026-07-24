@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Hero.css";
-import image from "../../assets/images/kuduweb3.png";
+import image from "../../assets/images/kuduweb7.png";
 
 const slides = [
   {
